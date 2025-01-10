@@ -25,7 +25,7 @@ public class SecurityConfig {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
     }
 
-/*    @Bean
+   @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
 
@@ -42,10 +42,10 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
-    }*/
+    }
 
 
-    @Bean
+   /* @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         // Allow all requests without authentication
         http
@@ -54,6 +54,6 @@ public class SecurityConfig {
                 .anyRequest().permitAll() ;  // Optional: Disable CSRF for non-browser clients (like testing APIs)
 
         return http.build();
-    }
+    }*/
 
 }
