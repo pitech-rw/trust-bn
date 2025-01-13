@@ -4,6 +4,7 @@ spring:
       host: localhost                # MongoDB host
       port: 27017
       database: testdb
+      uri: ${MONGO_URI}
   security:
     oauth2:
       client:
